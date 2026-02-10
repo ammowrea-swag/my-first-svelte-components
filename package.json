@@ -7,9 +7,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "COPYFILE_DISABLE=1 vite dev",
+    "build": "COPYFILE_DISABLE=1 vite build",
+    "preview": "COPYFILE_DISABLE=1 vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.0",

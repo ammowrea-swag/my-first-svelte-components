@@ -8,6 +8,10 @@ This is your page!
   import ArticleBody from '$lib/components/ArticleBody.svelte';
   import Image from '$lib/components/Image.svelte';
   import RelatedLinks from '$lib/components/RelatedLinks.svelte';
+  import Blockquote from '$lib/components/Blockquote.svelte';
+  import BigNumber from '$lib/components/BigNumber.svelte';
+  import Dashboard from '$lib/components/Dashboard.svelte';
+
 
   // Article metadata
   let headline = 'Become a force for good. Join our next class.';
@@ -46,11 +50,36 @@ This is your page!
     credit="Craig Newmark Graduate School of Journalism"
   />
 
+  <!-- Big Numbers: Key statistics about the school -->
+
+  <Dashboard>
+  <BigNumber
+  number="2006"
+  label="Year Founded"
+/>
+
+<BigNumber
+  number="1,300"
+  label="Alumni"
+/>
+
+<BigNumber
+  number="50%"
+  label="Attend tuition free"
+  footnote="As of Aug. 2025"
+/>
+</Dashboard>
+
   <!-- Article Body: The main story text with proper typography -->
   <ArticleBody>
     <p>
       At the Craig Newmark Graduate School of Journalism at the City University of New York, change is in our DNA. That comes of being born in 2006, as the digital revolution was transforming our profession in ways none of us could have imagined.
     </p>
+
+    <Blockquote
+      quote="The only thing we have to fear is fear itself."
+      cite="Franklin D. Roosevelt"
+   />
 
     <p>
       We fashioned a school to teach the latest storytelling, entrepreneurial, and technological skills alongside reporting, writing, and ethics. Beyond that, we’ve crafted a culture that spurns complacency, that isn’t afraid to pivot before the ground under us shifts.
